@@ -1,19 +1,22 @@
 #include <stdio.h>
-
 int main()
-
 {
-    int sum = 0, a = 0,b = 0;
+    int sum,a,b;
+   
+    printf("Enter a number");
+    scanf("%d",&a);
+    printf("Enter another number");
+    scanf("%d",&b);
 
-    for (int i = 3; i <=1000; i++)
+    for (int i = a; i <=b; i++)
     {
-        if (i%3 ==0)
+        if (i%3 == 0)
         {
             printf("%d  " ,i);
             sum += i;
         }
         
-        if (i%5 ==0)
+        if (i%5 == 0)
         {
             printf("%d  " ,i);
             sum += i;
@@ -23,10 +26,5 @@ int main()
     }
 
     printf("\nsum is:%d",sum);
-
-    
-        
-    
-
-    
+    return 0;
 }
